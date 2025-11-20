@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+<style>
+
+
+body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 8vw 0 8vw;
+      box-sizing: border-box;
+    }
+    .logo {
+      justify-content: center;
+        border: 2px solid rgb(93, 99, 100);
+      border-radius: 8px;
+      display: inline-flex;
+      padding: 4px 18px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: rgb(6, 174, 216);
+      letter-spacing: 0.08em;
+      color: rgb(220, 48,64);
+      align-items: center;
+      
+    
+    }
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      margin: 0 24px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: rgb(220, 48, 64);
+    }
+    .cta-btn {
+      background:rgb(220, 48, 64);
+      color: #fff;
+      border: none;
+      padding: 10px 28px;
+      border-radius: 8px;
+      font-size: 1.09rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .cta-btn:hover {
+      background:rgba(20,24,86,255);
+    }
+     .footer-bar {
+  background-color: #222;       
+  color: #eee;                  
+  text-align: center;          
+  padding: 12px 0;             
+  font-size: 0.9rem;           
+  position: fixed;              
+  bottom: 0;                   
+  left: 0;
+  width: 100%;                 
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3); 
+  z-index: 1000;           
+}
+.wlc{
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto 120px;
+  padding: 0 16px 24px;
+}
+.subtle{
+  margin: 6px 0 14px;
+  color:var(--muted);
+}
+
+.card-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: clamp(12px, 2vw, 20px);
+  margin-bottom: 28px;
+}
+
+.card{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding: 18px 22px;
+  border: 2px solid #2b2b2b;
+  border-radius: 999px;       
+  background:#ffffff;
+  
+  color:#000000;
+  font-weight:700;
+  transition: transform .1s ease, box-shadow .2s ease;
+  
+}
+.card:hover,
+.card:focus-visible{
+  transform: translateY(-2px);
+  outline:none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 60%, transparent), var(--shadow);
+} 
+
+
+.feedback{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 8px 50px 22px;
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  background: #c52235;
+  box-shadow: var(--shadow);
+}
+.feedback h3{
+  margin: 0 0 10px;
+  color: var(--accent);
+  text-align:center;
+}
+.feedback label{
+  display:block;
+  margin: 8px 0 6px;
+  color:var(--muted);
+  font-weight:600;
+}
+.feedback textarea{
+  width:95%;
+  border:1.5px solid var(--accent);
+  border-radius: 10px;
+  padding: 12px 14px;
+  resize: vertical;
+  font-family: inherit;
+}
+.feedback button{
+  margin-top:12px;
+  width:100%;
+  background: rgb(34, 13, 90);
+  color:#ffffff;
+  border:0;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:800;
+  cursor:pointer;
+  box-shadow: 0 8px 20px rgba(220,48,64,.22);
+}
+.feedback button:hover{ background:#141856 }
+    </style>
+      </head>
+    <body>
+        <header>
+    <div class="logo"><br>
+        <div class="logoms" > Mind Seed
+   </div>
+    <nav>
+      <a href="file:///F:/papa%20website/intex.html#works">Home</a>
+      <a href="file:///F:/papa%20website/store.html">Store</a>
+      <a href="https://youtube.com/playlist?list=PLnJHbb1KLsQX0DFWvRPcSJCr4aOQRlRFn&si=4hru69R04vvQ89qK">Vlog</a>
+      <a href="file:///F:/papa%20website/about.html">About</a>
+    </nav>
+    <button class="cta-btn" onclick="window.location.href='https://linktr.ee/Msaharan'">Let's Talk</button>
+  </header>
+<main class="container">
+  <h1 class="wlc">WELCOME LEADERS</h1>
+  <p class="subtle">choose from the below options :-</p>
+
+  <section class="card-grid">
+    <a class="card" href="https://youtu.be/vfR1t4u082U">Motivational video</a>
+    <a class="card" href="https://www.rcmworld.com/Home/ProductCatalogue">Products</a>
+    <a class="card" href="https://www.rcmworld.com/Home/Contact">Updates</a>
+    <a class="card" href="https://www.rcmworld.com/Home/RCMEvents">RCM ULP program</a>
+    <a class="card" href="https://chat.whatsapp.com/CZ6VFZcwjF3GRJPFgF9Top">My Programs</a>
+    <a class="card" href="file:///F:/papa%20website/books.html">books</a>
+  </section>
+
+  <section class="feedback">
+    <h3>Feedback</h3>
+    <label for="fb">Your Feedback</label>
+    <textarea id="fb" rows="5" placeholder="Write your feedback here..."></textarea>
+    <button type="button">Submit</button>
+  </section>
+</main>   
+</body><footer class="footer-bar">
+  &copy; 2025 Ms. All rights reserved.
+</footer>
+</html>

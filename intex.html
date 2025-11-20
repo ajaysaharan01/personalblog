@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahaveer saharan</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 8vw 0 8vw;
+      box-sizing: border-box;
+    }
+    .logo {
+      justify-content: center;
+        border: 2px solid rgb(93, 99, 100);
+      border-radius: 8px;
+      display: inline-flex;
+      padding: 4px 18px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: rgb(6, 174, 216);
+      letter-spacing: 0.08em;
+      color: rgb(220, 48,64);
+      align-items: center;
+      
+    
+    }
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      margin: 0 24px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: rgb(220, 48, 64);
+    }
+    .cta-btn {
+      background:rgb(220, 48, 64);
+      color: #fff;
+      border: none;
+      padding: 10px 28px;
+      border-radius: 8px;
+      font-size: 1.09rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .cta-btn:hover {
+      background:rgba(20,24,86,255);
+    }
+    main {
+      max-width: 1300px;
+      margin: 40px auto 0 auto;
+    }
+    .content-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8vw;
+    }
+    .intro {
+      flex: 1 1 380px;
+      min-width: 340px;
+    }
+    .intro small {
+      font-size: 1.125rem;
+      display: block;
+      margin-bottom: 16px;
+      color: #555;
+    }
+    .intro h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1.1;
+      margin: 0 0 18px 0;
+    }
+    .intro .highlight {
+      color: rgb(220, 48, 64);
+      font-family: inherit;
+      font-weight: 700;
+    }
+    .intro p {
+      font-size: 1.14rem;
+      color: #454545;
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+    .work-btn {
+      background: rgb(220, 48, 64);
+      color: #fff;
+      font-size: 1.13rem;
+      padding: 14px 38px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(234, 76, 137, 0.12);
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .work-btn:hover {
+      background: rgba(20,24,86,255);
+    }
+    .photo {
+      flex: 1 1 290px;
+      display: flex;
+      min-width: 250px;
+      justify-content: center;
+    
+}
+    .photo1 img {
+       width: 300px;
+  max-width: 100vw;
+  border-radius: 16px;
+  border: 3px solid #181818;
+  box-shadow: 0 8px 28px rgba(40,40,40,0.06);
+  transform: rotate(3deg);
+  background: #f7f7f7;
+  object-fit: cover;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: scaleX(-1);
+  opacity: 0; /* start hidden */
+  animation: fadeInPhoto 2s forwards; /* fade in on load */
+}
+
+@keyframes fadeInPhoto {
+  to {
+    opacity: 1;
+  }
+}
+
+.content-wrap:nth-of-type(2) .photo1 img {
+  animation-delay: 3s;
+}
+      
+    .footer-bar {
+  background-color: #222;       
+  color: #eee;                  
+  text-align: center;          
+  padding: 12px 0;             
+  font-size: 0.9rem;           
+  position: fixed;              
+  bottom: 0;                   
+  left: 0;
+  width: 100%;                 
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3); 
+  z-index: 1000;           
+}
+.content-wrap2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8vw;
+  gap: 20px; 
+}
+.photo2 {
+  
+transform: unset;
+  border-radius: 16px;
+  border: 5px solid #181818;
+  box-shadow: 0 0px 0px rgba(40,40,40,0.06);
+  transform: skew(60);
+  width: 400px;
+  height: 266px;
+  object-fit: cover;
+  transform-origin: center;
+  transform-style: preserve-3d;
+
+  opacity: 0;
+  animation: fadeInPhoto 2s forwards;
+
+}
+.intro2 {
+  flex: 1 1 380px; 
+  min-width: 340px;
+}
+.content-wrap3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20vw;
+  gap: 20px;
+  
+  flex-direction: row-reverse;
+}
+
+.content-wrap3 .intro {
+  flex: 1 1 380px;
+  min-width: 300px;
+  text-align: left; 
+}
+
+.photo3 {
+  flex: 1 1 150px; 
+  display: flex;
+  justify-content: flex-end; 
+  border: 5px solid black;
+  border-radius: 16px;
+  object-fit: cover;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  opacity: 0;
+  animation: fadeInPhoto 2s forwards;
+}
+.content-wrap4 {
+  display: flex;
+  align-items: center;      /* Vertically center everything */
+  justify-content: center;
+  gap: 40px;
+  height: 57vh; 
+}
+
+.side-text1, .side-text2 {
+  font-size: 4vw;
+  font-weight: bold;
+  width: 12vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;             /* Take full container height for proper vertical centering */
+}
+
+.side-text2 {
+  color: rgb(220, 48, 64);
+  font-weight: bolder;
+}
+.reel-container {
+    display: flex; 
+    gap: 20px;
+    padding: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.reel-video {
+    width: 300px; 
+    height: 500px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    object-fit: cover; 
+    background-color: #000; 
+}
+
+
+.reel-video:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+.highlight {
+ font-size: 4rem;
+  font-weight: bolder;    
+  color: rgb(220, 48, 64);
+      font-family: inherit;
+      font-weight: 700;}
+
+
+
+
+
+
+    
+    @media (max-width: 980px) {
+      .content-wrap {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 4vw;
+      }
+      header { flex-direction: column; gap: 8px; }
+    }
+    @media (max-width: 600px) {
+      .intro h1 { font-size: 2.1rem; }
+      header, .content-wrap { padding: 0 12px; }
+      nav { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><br>
+        <div  class="logoms" href="file:///F:/papa%20website/intropage.html#works"> Mind Seed 
+   </div> </div>
+    <nav>
+      <a href="file:///F:/papa%20website/intex.html#works">Home</a>
+      <a href="file:///F:/papa%20website/store.html">Store</a>
+      <a href="https://youtube.com/playlist?list=PLnJHbb1KLsQX0DFWvRPcSJCr4aOQRlRFn&si=4hru69R04vvQ89qK">Vlog</a>
+      <a href="file:///F:/papa%20website/about.html">About</a>
+    </nav>
+    <button class="cta-btn" onclick="window.location.href='https://linktr.ee/Msaharan'">Let's Talk</button>
+  </header>
+  <main>
+    <div class="content-wrap">
+      <section class="intro">
+        <small>👋 Hi there, I'm Mahaveer Saharan</small>
+        <h1>
+          I build <span class="highlight">Leaders</span><br>and Promote <span class="highlight">Income</span>
+        </h1>
+        <p>
+          I help people to know about their Goals and how to achieve them with basic and success principles with a great vision.
+       
+        <a class="work-btn" href="file:///F:/papa%20website/main%20page.html?feedback=#store">click to watch &rarr;</a>
+      </section>
+      <div class="photo1">
+        <img src="FB_IMG_1603615959879.jpg.png" alt="Portfolio photo" />
+      </div>
+    </div>
+    
+  </main>
+  <hr class="dashed">  <div class="content-wrap2">
+   <div class="photo2">
+        <img src="86b1c489-cb03-4318-a61d-b1b0792a6609 copy.jpeg" width="400" alt="Portfolio photo" />
+      </div>
+      
+   
+      <section class="intro">
+        <small>Motivate and Train </small>
+        <h1>
+          People <span class="highlight">ALL OVER</span><br>India 
+        </h1>
+        <p>
+         Experience of more than 20+years</p> </section> </div>
+           <hr class="dashed">  <div class="content-wrap3">
+   <div class="photo3">
+        <img src="e18dddf2-daa5-4005-9444-c3912c64e317.jpeg" width="600" alt="Portfolio photo" />
+      </div>
+      
+   
+      <section class="intro">
+        <small> acknowledge the </small>
+        <h1>
+         <span class="highlight">Power</span><br>of Network 
+        </h1>
+        <p>
+         future proof business</p> </section> </div>
+           <hr class="dashed"> 
+           <div class="content-wrap4">
+  <div class="side-text1 left">EXPLORE</div>
+  <div class="reel-container">
+         <div class="reel-container">
+        <video class="reel-video" autoplay loop muted playsinline>
+            <source src="balli" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="reel-video" autoplay loop muted playsinline>
+            <source src="AQOZpZhG5iWRPGJMX2TwZo-gWVY1gh3rYI6O0Sw7Y9Q1O7VRx0qrdMR7TuDq5OMWmdb5g7iDOyCQ64X_QK7OrASohwLbKcfi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="reel-video" autoplay loop muted playsinline>
+            <source src="scorpio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+         </div>
+  <div class="side-text2 right"><br>WORLD WIDE</div>
+</div>
+       
+    </div>
+     <hr class="dashed">  <div class="content-wrap4">
+      <h1>GET YOUR <span class="highlight">MONEY</span> FREEDOM SOON</h1> 
+
+     </div>
+</body>
+<footer class="footer-bar">
+  &copy; 2025 Ms. All rights reserved.
+</footer>
+
+</html>
