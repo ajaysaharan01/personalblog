@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahaveer Saharan — Responsive Redesign</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #222;
+      overflow-x: hidden;
+    }
+    img, video { max-width: 100%; height: auto; display: block; }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      padding: 18px 6vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: rgb(220,48,64);
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    nav a:hover { color: rgb(220,48,64); }
+    .cta-btn {
+      background: rgb(220,48,64);
+      color: #fff;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* SECTION DEFAULT STYLE */
+    section {
+      width: 100%;
+      padding: 60px 6vw;
+    }
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .intro h1 { font-size: 3rem; line-height: 1.1; }
+    .intro small { font-size: 1.1rem; color: #666; }
+    .intro p { margin-top: 16px; font-size: 1.1rem; color: #444; max-width: 500px; }
+    .highlight { color: rgb(220,48,64); font-weight: 700; }
+
+    .btn-primary {
+      margin-top: 24px;
+      display: inline-block;
+      background: rgb(220,48,64);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .photo-box img {
+      border-radius: 16px;
+      border: 3px solid #111;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    /* REELS */
+    .reel-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .reel-video {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    }
+
+    /* LAST TEXT */
+    .big-center {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 18px;
+      margin-top: 40px;
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .intro h1 { font-size: 2.2rem; }
+      .reel-video { width: 90vw; }
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Mind Seed</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Store</a>
+    <a href="#">Vlog</a>
+    <a href="#">About</a>
+  </nav>
+  <button class="cta-btn">Let's Talk</button>
+</header>
+
+<!-- SECTION 1 -->
+<section>
+  <div class="flex">
+    <div class="intro">
+      <small>👋 Hi there, I'm Mahaveer Saharan</small>
+      <h1>I build <span class="highlight">Leaders</span><br>and Promote <span class="highlight">Income</span></h1>
+      <p>I help people know their goals and achieve them using simple and powerful success principles.</p>
+      <a class="btn-primary" href="#">Click to Watch →</a>
+    </div>
+    <div class="photo-box"><img src="FB_IMG_1603615959879.jpg.png"></div>
+  </div>
+</section>
+
+<!-- SECTION 2 -->
+<section>
+  <div class="flex">
+    <div class="photo-box"><img src="86b1c489-cb03-4318-a61d-b1b0792a6609 copy.jpeg"></div>
+    <div class="intro">
+      <small>Motivate and Train</small>
+      <h1>People <span class="highlight">All Over</span> India</h1>
+      <p>Experience of more than 20+ years</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section>
+  <div class="flex">
+    <div class="intro">
+      <small>Acknowledge the</small>
+      <h1><span class="highlight">Power</span> of Network</h1>
+      <p>Future-proof business strategy for long-term growth.</p>
+    </div>
+    <div class="photo-box"><img src="e18dddf2-daa5-4005-9444-c3912c64e317.jpeg"></div>
+  </div>
+</section>
+
+<!-- REELS -->
+<section>
+  <h1 class="big-center">EXPLORE <span class="highlight">WORLDWIDE</span></h1>
+  <div class="reel-container">
+    <video class="reel-video" autoplay muted loop playsinline><source src="balli" type="video/mp4"></video>
+    <video class="reel-video" autoplay muted loop playsinline><source src="AQ.mp4" type="video/mp4"></video>
+    <video class="reel-video" autoplay muted loop playsinline><source src="scorpio.mp4" type="video/mp4"></video>
+  </div>
+</section>
+
+<section>
+  <h1 class="big-center">GET YOUR <span class="highlight">MONEY</span> FREEDOM SOON</h1>
+</section>
+
+<footer>© 2025 MS. All rights reserved.</footer>
+
+</body>
+</html>
